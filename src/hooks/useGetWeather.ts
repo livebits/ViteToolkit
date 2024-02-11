@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { FetchWeather } from "../services/WeatherService";
+import { WeatherDetailProps } from "../types/Weather";
 
 const useGetWeather = (city: string) => {
-    const [weather, setWeather] = useState<any | null>(null);
+    const [weather, setWeather] = useState<WeatherDetailProps | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
-    const [error, setError] = useState<any | null>(null);
+    const [error, setError] = useState<unknown | null>(null);
 
     const getWeather = async () => {
         setLoading(true);

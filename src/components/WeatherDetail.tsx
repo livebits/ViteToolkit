@@ -1,7 +1,4 @@
-
-type WeatherDetailProps = {
-    weather: any
-}
+import { WeatherDetailProps } from "../types/Weather";
 
 const WeatherDetail: React.FC<WeatherDetailProps> = ({weather}) => {
     return (

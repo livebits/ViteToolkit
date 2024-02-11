@@ -1,5 +1,4 @@
-// FILEPATH: /home/livebits/projects/tut/react-tut/cra-app/src/components/PrivateRoute.test.tsx
-import { getByText, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthContext';
 import PrivateRoute from '../PrivateRoute';
