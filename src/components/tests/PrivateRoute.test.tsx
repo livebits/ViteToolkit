@@ -21,7 +21,7 @@ test('renders children when user is authenticated', () => {
     </MemoryRouter>
   );
 
-  expect(screen.getByText("Test")).toBeInTheDocument();
+  expect(screen.getByText("Test")).toBeInTheDocument;
 });
 
 test('redirects to login when user is not authenticated', () => {
@@ -43,5 +43,5 @@ test('redirects to login when user is not authenticated', () => {
     </MemoryRouter>
   );
 
-  expect(screen.getByText('Login')).toBeInTheDocument();
+  expect(screen.getByText('Login')).toBeInTheDocument;
 });
