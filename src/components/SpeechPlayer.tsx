@@ -46,7 +46,7 @@ const SpeechPlayer: React.FC = () => {
             </div>
             <div className="toolbar">
                 <button className="play" onClick={handlePlaying}>
-                    {playing ? <FaPauseCircle /> : <FaPlayCircle />}
+                    {playing ? <FaPauseCircle style={{ width: '100%', height: '100%' }} /> : <FaPlayCircle />}
                 </button>
                 <div className="voices">
                     <select onChange={handleSelectVoice}>
